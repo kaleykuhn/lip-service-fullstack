@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Pacifico&display=swap");
+
+#lipservefont {
+   font-family: "Alice";
+}
+// .cardspacebackground {
+//    background-image: url("https://www.seekpng.com/png/detail/2-28145_lips-png-pic-background-dark-lipstick-with-white.png");
+//    background-position-x: center;
+// }
+.cardresult {
+   padding-top: 0px;
+}
+.cardfontcolor {
+   color: black;
+}
+
+// .credtop {
+//    color: rgb(3, 37, 37);
+// }
+// .zoom {
+//    padding: 0px;
+//    background-color: white;
+//    transition: transform 0.2s;
+//    width: 182px;
+//    cursor: pointer;
+//    margin: 0 auto;
+// }
+
+// .zoom:hover {
+//    -ms-transform: scale(1.2); /* IE 9 */
+//    -webkit-transform: scale(1.2); /* Safari 3-8 */
+//    transform: scale(1.2);
+// }
+#resultscardfont {
+   font-weight: 700;
+
+   //text-decoration: underline;
+   //text-decoration-color: black;
+}
+.match {
+   color: rgb(247, 247, 247);
+}
+.goldtext {
+   color: rgb(140, 112, 21);
+}
+.black {
+   color: rgb(12, 3, 2);
+}
+// .playful {
+//    color: red;
+//    text-shadow: 1px 1px red;
+//    font-size: 25px;
+// }
+//.blubbers {
+//  box-sizing: content-box;
+//width: 96%;
+// border: solid black 1px;
+//padding: 0px;
+//}
+/* This is the checked state */
+
+//.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+//  background-color: red; /* green */ //this bg image SVG is just a white circle, you can replace it with any valid SVG code */
+//}
+
+/* active state i.e. displayed while the mouse is being pressed down */
+//.custom-radio .custom-control-input:active ~ .custom-control-label::before {
+//color: #fff;
+//background-color: #ff0000; /* red */
+//}
+
+/* the shadow; displayed while the element is in focus */
+//custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+//box-shadow: 0 0 0 1px green, 0 0 0 0.2rem rgba(255, 123, 255, 0.25); /* pink, 25% opacity */
+//}
+.custom-control-input ~ .custom-control-label {
+   cursor: pointer;
+}
+.special-card {
+   /* create a custom class so you
+      do not run into specificity issues
+      against bootstraps styles
+      which tends to work better than using !important
+     (future you will thank you later)*/
+
+   //background-color: rgba(245, 245, 245, 1);
+   opacity: 0.7;
+   padding-top: 0px !important;
+   padding-right: 0px !important;
+   padding-left: 0px !important;
+   padding-bottom: 0px !important;
+}
+
+//landing
+//#form1 {
+//display: none;
+//}
+
+.landing-background {
+   // background: url("../img/promlips.jpeg") no-repeat center center fixed;
+   // background-size: cover;
+   // //background-repeat: no-repeat;
+   // //spread across 100% of viewport
+   // //background-position: center center;
+   // min-height: 100vh;
+   background: url("../img/woman-wearing-white-crew-neck-top-2829368\ \(1\).jpg")
+      no-repeat center center fixed;
+   background-size: cover;
+   //background-repeat: no-repeat;
+   //spread across 100% of viewport
+   //background-position: center center;
+   min-height: 100vh;
+}
+
+.bear-text {
+   color: rgb(155, 14, 14);
+}
+
+// styles log out to make flush with edge of card and font adjusted with var remove border truly flush
+.btn-link {
+   padding-left: 0;
+   padding-right: 0;
+   font-weight: $font-weight-bold;
+   border: 0;
+}
+
+// styles log out to make flush with edge of card and font adjusted with var remove border truly flush
+.btn-link {
+   padding-left: 0;
+   padding-right: 0;
+   font-weight: $font-weight-bold;
+   border: 0;
+}
+
+//var is listed style doc to style
+.text-brand {
+   font-family: $font-family-brand;
+}
+//seperates  tabs
+.tab-separator {
+   border-left: 1px $pink-800 solid;
+}
+//highlights  tab could use jquery to add and remove
+.tab-active {
+   background-color: $pink-800;
+}
+
+.card {
+   border: 0;
+}
+.card-body {
+   color: $white;
+   font-family: $font-family-serif;
+   font-size: $font-size-base * 1.25;
+}
+.card.bg-primary {
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.card.bg-secondary {
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+}
+/*makes the button group  weight of normal*/
+.btn-group .btn {
+   font-weight: $font-weight-normal;
+}
+
+textarea {
+   /*width 100% makes it span entirety of thing and all textareas transparent */
+   width: 100%;
+   background-color: transparent;
+   /* https://stackoverflow.com/a/17110012 */
+   border: none;
+   overflow: auto;
+   outline: none;
+
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+
+   resize: none; /*remove the resize handle on the bottom right*/
+}
+/*font is white in any card text area*/
+.card textarea {
+   color: $white;
+}
+/*When something has a bg of success and lead p tag add space after lead because it is nested*/
+.bg-success,
+.bg-danger p.lead {
+   color: $white;
+}
