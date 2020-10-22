@@ -13,7 +13,7 @@ class LipResults extends React.Component {
       super(props);
 
       axios
-         .get("https://run.mocky.io/v3/8737dfe5-5cdd-4b97-b4e6-a64a283f7dfc")
+         .get("http://localhost:5000/api/v1/lipsticks=%60memorycards")
          .then((res) => {
             // handle success
             console.log(res);
