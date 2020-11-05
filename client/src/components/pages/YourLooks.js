@@ -14,7 +14,7 @@ class YourLooks extends React.Component {
       super(props);
 
       axios
-         .get("https://run.mocky.io/v3/f1327d36-528b-46da-b620-a3fe79f51061")
+         .get("http://localhost:5000/api/v1/lipsticks")
          .then((res) => {
             // handle success
             console.log(res);
@@ -62,7 +62,7 @@ class YourLooks extends React.Component {
       {
          lipsticks.forEach((lipstick) => {
             this.props.currentUserTags.forEach((tag) => {
-               if (tag.id == lipstick.tag.id) {
+               if (tag.id == lipstick.tag) {
                   recommendations.push(lipstick);
                }
             });

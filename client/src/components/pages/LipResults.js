@@ -13,7 +13,7 @@ class LipResults extends React.Component {
       super(props);
 
       axios
-         .get("http://localhost:5000/api/v1/lipsticks=%60memorycards")
+         .get("http://localhost:5000/api/v1/lipsticks")
          .then((res) => {
             // handle success
             console.log(res);
@@ -48,15 +48,18 @@ class LipResults extends React.Component {
       //    user = this.props.location.results;
       // }
       console.log(this.props.currentUser);
-      {
-         lipsticks.forEach((lipstick) => {
-            user.tags.forEach((tag) => {
-               if (tag.id == lipstick.tag.id) {
-                  recomendations.push(lipstick);
-               }
-            });
+      // if (lipsticks.length > 0 && user.tags.length > 0) {
+      lipsticks.forEach((lipstick) => {
+         console.log(lipstick);
+         user.tags.forEach((tag) => {
+            console.log(tag);
+            if (tag.id === lipstick.tag) {
+               console.log(lipstick.tag.id);
+               recomendations.push(lipstick);
+            }
          });
-      }
+      });
+      // }
 
       console.log("recomendations", recomendations);
       // const lipsticks = this.props.lipstick;
