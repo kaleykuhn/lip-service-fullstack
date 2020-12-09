@@ -190,3 +190,7 @@ textarea {
 .bg-danger p.lead {
    color: $white;
 }
+.disabled {
+   pointer-events: fill !important;
+   cursor: not-allowed !important;
+}
