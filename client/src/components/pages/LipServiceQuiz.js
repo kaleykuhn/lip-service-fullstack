@@ -403,7 +403,7 @@ class LipServiceQuiz extends React.Component {
 
             <div className="py-8">
                <button
-                  className="btn btn-outline-secondary btn-lg float-right "
+                  className="btn btn-outline-primary btn-lg float-right "
                   id="submitButton"
                   onClick={() => this.getUserInputs()}
                >
