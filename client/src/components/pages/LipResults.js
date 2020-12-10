@@ -152,7 +152,7 @@ class LipResults extends React.Component {
             <div className="mb-8"></div>
             <Link
                to="/your-looks"
-               className="btn btn-outline-danger btn-lg float-right"
+               className="btn btn-outline-primary btn-lg float-right"
                id="nextButton"
             >
                Save

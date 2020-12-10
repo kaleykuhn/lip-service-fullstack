@@ -59,15 +59,14 @@ class YourLooks extends React.Component {
       //    user = this.props.location.results;
       // }
       console.log(this.props.currentUser);
-      {
-         lipsticks.forEach((lipstick) => {
-            this.props.currentUserTags.forEach((tag) => {
-               if (tag.id == lipstick.tag) {
-                  recommendations.push(lipstick);
-               }
-            });
+
+      lipsticks.forEach((lipstick) => {
+         this.props.currentUserTags.forEach((tag) => {
+            if (tag.id === lipstick.tag) {
+               recommendations.push(lipstick);
+            }
          });
-      }
+      });
 
       console.log("recommendations", recommendations);
       const filteredRecommendations = [...new Set(recommendations)];
@@ -120,49 +119,6 @@ class YourLooks extends React.Component {
                ))}
             </div>
 
-            {/*{filteredRecommendations.map((match) => (
-                  <YourLook lipstick={match} />
-               ))}
-            
-            
-            
-            {users.map((lipresult) => {
-               return <UsersList /> ; */}
-            {/* {users.map((user) => {
-               return <UsersList /> ;
-               <LipResult  tags={lipResult.tags}} 
-               />
-               );
-            })} 
-               const user = [];
-               const lipsticks = [];
-               const lipsticks = [];
-               const filteredLipsticks = lipsticks.filter((lipstick)) => {
-                  return( 
-                      lipstick.id === user.tags[0].id ||
-                      lipstick.id === user.tags[1].id ||
-                      lipstick.id === user.tags[2].id ||
-                      lipstick.id === user.tags[3].id 
-                  );
-               });
-                           
-                        
-   
-            {
-                  props.location.state.selectedLipsticks.map( selection => {
-                   return ( <LipResult lipstick={lipsticks[selection] /> )
-                  }
-            
-                  {memoryCards.map((memoryCard) => {
-               return (
-                  <MemoryCard
-                     answer={memoryCard.answer}
-                     imagery={memoryCard.imagery}
-                     key={memoryCard.id}
-                  />
-               );
-            
-            */}
             <hr className="my-4"></hr>
 
             <div className="mb-8"></div>
