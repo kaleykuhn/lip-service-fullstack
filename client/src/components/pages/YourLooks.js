@@ -14,7 +14,7 @@ class YourLooks extends React.Component {
       super(props);
 
       axios
-         .get("http://localhost:5000/api/v1/lipsticks")
+         .get(`api/v1/lipsticks`)
          .then((res) => {
             // handle success
             console.log(res);
